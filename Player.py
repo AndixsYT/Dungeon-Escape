@@ -8,8 +8,4 @@ class Player:
         self.damage = damage
         self.inventory = inventory
     def invent(self):
-        print (self.inventory)
-        
-
-
-print (banana.inventory)
+        self.inventory = [[],[],[],[]]
