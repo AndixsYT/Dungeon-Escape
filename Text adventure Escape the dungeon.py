@@ -5,14 +5,6 @@ import os
 
 
 ###############
-###User_info###
-###############
-def player(name, hp):
-    name
-    hp
-
-
-###############
 #####Story#####
 ###############
 #Game_menu.always_pause.start()
