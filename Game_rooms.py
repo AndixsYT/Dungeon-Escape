@@ -2,7 +2,6 @@
 import Game_trees
 from Decision_tree import Decision_tree_workings
 
-
 ###############
 ###FirstRoom###
 ###############
@@ -13,3 +12,6 @@ def first_room():
 ###############
 #####Rooms#####
 ###############
+
+def room1():
+    (Decision_tree_workings(Game_trees.room1))

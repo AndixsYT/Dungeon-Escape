@@ -16,13 +16,17 @@ class Start_menu:
                 enter = input("Press enter to continue\n")
                 if enter == "" or enter == " ":
                     true = False
+                    os.system("cls")
                     Game_rooms.first_room()
             elif (self.answer) == "2":
                 print ("This feature will be implemented later, for now, try playing by guessing your way forward")
                 enter = input ("Press enter to continue\n")
-                if enter == "" or enter == " ":
+                if enter != "1" or enter != "2":
                     os.system("cls")
                     self.answer = input ("Welcome to Escape The Dungeon\n[1] Start New Game\n[2] How To Play\n")
+            else: #Om man skriver något annat än 1 eller 2
+                os.system("cls")
+                self.answer = input ("Welcome to Escape The Dungeon\n[1] Start New Game\n[2] How To Play\n")
 
 
 ## This is the pause menu / inventory

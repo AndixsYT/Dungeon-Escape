@@ -1,16 +1,6 @@
 ###############
 ###Item_Base###
 ###############
-class Equipment:
-    def __init__(self, type, item_name, uses, weight, worth, price, info):
-        self.type = type
-        self.item_name = item_name
-        self.uses = uses
-        self.weight = weight
-        self.worth = worth
-        self.price = price
-        self.info = info
-
 class Consumables:
     def __init__(self, type, item_name, effect, uses, duration, weight, worth, price, info):
         self.type = type
@@ -21,21 +11,32 @@ class Consumables:
         self.weight = weight
         self.worth = worth
         self.price = price
-        self.info = info
+        self.info = info 
 
 
 ###############
 ###Equipment###
 ###############
-class Armor(Equipment):
+class Armor():
     def __init__(self, type, item_name, defense, weight, worth, price, info):
-        super().__init__(type, item_name, weight, worth, price, info)
         self.defense = defense
+        self.type = type
+        self.item_name = item_name
+        self.weight = weight
+        self.worth = worth
+        self.price = price
+        self.info = info
 
-class Weapon(Equipment):
+class Weapon():
     def __init__(self, type, item_name, damage, uses, weight, worth, price, info):
-        super().__init__(type, item_name, uses, weight, worth, price, info)
         self.damage = damage
+        self.type = type
+        self.item_name = item_name
+        self.uses = uses
+        self.weight = weight
+        self.worth = worth
+        self.price = price
+        self.info = info
 
 
 ###############

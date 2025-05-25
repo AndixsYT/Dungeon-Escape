@@ -3,6 +3,7 @@ from Game_menu import Start_menu
 import Game_menu
 import os
 from Player import Player
+import Game_rooms
 
 ###############
 #####Story#####
@@ -11,4 +12,4 @@ from Player import Player
 
 the_player = Player(hp=50, inventory=Player.invent, weapon=Player.equips, name="player")
 os.system("cls")
-Start_menu().fallout()
+Start_menu().fallout() #Den här callen startar hela spelet
