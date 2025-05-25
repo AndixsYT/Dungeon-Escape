@@ -9,6 +9,6 @@ from Player import Player
 ###############
 #Game_menu.always_pause.start()
 
-the_player = Player(hp = 50)
+the_player = Player(hp=50, inventory=Player.invent, weapon=Player.equips, name="player")
 os.system("cls")
 Start_menu().fallout()
