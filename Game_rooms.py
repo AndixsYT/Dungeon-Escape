@@ -7,11 +7,10 @@ from Decision_tree import Decision_tree_workings
 ###############
 
 def first_room():
-    (Decision_tree_workings(Game_trees.initiate))
+    (Decision_tree_workings(Game_trees.initiate1))
 
 ###############
 #####Rooms#####
 ###############
 
-def room1():
-    (Decision_tree_workings(Game_trees.room1))
+#Not needed?

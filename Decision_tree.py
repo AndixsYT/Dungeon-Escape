@@ -1,4 +1,5 @@
 import os
+import Player
 import Game_rooms
 import Game_trees
 class Decision_tree_workings:
@@ -21,10 +22,13 @@ class Decision_tree_workings:
                     print (f"What you just typed is not a valid choice, please try again")
             if tmptree in Game_trees.all_rooms: #This checks if the value of the dict matches with the names of other rooms and then switches to that room
                 tree = Game_trees.all_rooms[tmptree]
-            else:    
-                print (tmptree)
-            enter = input ("\nPress enter to continue\n")
-            if enter != "THE ENTIRE BEE MOVIE SCRIPT":
+            elif tmptree == "fight":
+                Player.fight().FightMechanics()
+            elif enter != "THE ENTIRE BEE MOVIE SCRIPT":
                 os.system("cls")
 
-####### READ THIS: MAKE A LIST OF STEPS/CHOISES TAKEN! EXAMPLE: [1, 2, 3]. STRYK SENAST KANSKE OCH GÅ TILLBAKA.
+            else:    
+                print (tmptree) #prints the most utter leaf
+            enter = input ("\nPress enter to continue\n")
+
+####### READ THIS: MAKE A LIST OF STEPS/CHOISES TAKEN! EXAMPLE: [1, 2, 3]. STRYK SENAST KANSKE OCH GÅ TILLBAKA.  FÖR SENARE
